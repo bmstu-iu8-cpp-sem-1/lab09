@@ -18,6 +18,7 @@ char * newString = stringCopy(p);
 p[0] = 'S';
 std::cout << p << std::endl; // Some string
 std::cout << newString << std::endl; // some string
+delete[] newString;
 ```
 
 ### Задание 2
@@ -32,6 +33,7 @@ char * newString = stringConcatinate(p, p1);
 p[0] = 'S';
 p1[0] = 'S';
 std::cout << newString << std::endl; // Hello, world!
+delete[] newString;
 ```
 
 ### Определим структуру матрицы
